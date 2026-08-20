@@ -1,119 +1,68 @@
 body{
-    background-color: #d7dae2;
+    background-color: rgb(255, 255, 255);
 }
-h1 {
-    background: linear-gradient(90deg,#22D3EE,#3B82F6,#8B5CF6,rgb(239, 219, 255));
-    background-clip: text;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    opacity: 0.9;
-    text-align:center ;
-    font-family: sans-serif;
-    font-size: 4em;
-    font-weight: bold;
-}
-p{
-    text-align: center;
-    font-size: 0.9rem;
-    font-family: serif;
-    color: rgb(248, 238, 225);
-
+.navbar ul{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 1.3em;
+   border: 1px rgb(255, 251, 251);
+   border-radius: 6px;
+   box-shadow: 10px 10px 20px rgb(170, 162, 162),
+   -10px -10px 20px rgb(216, 208, 208);
+   box-sizing: border-box;
+   padding: 8px;
+   flex-wrap: wrap;
 }
 .hero{
-    background-color: #1e3157;
     width: 100%;
-    border: 1px white;
-    border-radius: 24px;
-    box-sizing: border-box;
+    min-height: 100dvh;
+    text-wrap: balance;
+    border: 1px black;
+    min-height: 80dvh;
+    background-color: rgba(211, 208, 214, 0.527);
+    box-shadow: 10px 10px 20px rgba(114, 106, 106, 0.74) ,-10px -10px 20px rgba(189, 189, 189, 0.541);
+    border-radius: 16px;
+    margin-top: 16px;
 }
-.hbtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-}
-.btnh{
-    background-color: #000000;
-    color: aliceblue;
-    border: 1px white;
-    border-radius:24px;
-    padding: 18px;
-}
-   
-.navi ul{
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    flex-wrap: wrap;
-   
-}
-.nav li{
-    color: rgb(255, 231, 231);
-    font-size: 1em;
-   
+.hero h1{
+    text-align: center;
+    font-size: clamp(4rem,7vw,5.5rem);
+    background: linear-gradient(120deg,#2563EB,#06B6D4,#7C3AED);
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 1.5em;
 }
 .products{
-    color: rgb(65, 58, 53);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1.5em;
+    border: 1px solid black;
 }
-.prd{
-    color: rgb(48, 39, 54);
-    text-align: left;
-    font-size: 2rem;
-}
-.info{
-    color: rgb(88, 70, 47);
-    text-align: left;
-    font-size: 1rem;
-    font-family: serif;
-    font-family: sans-serif;
-    font-weight: bold;
-    opacity:0.7;
-}
-.container{
-    display:flex;
-    gap: 1em;
-   
-}
-.cards1{
-    flex: 1;
-    border: 2px solid rgb(43, 37, 37);
-    border-radius: 24px;
-}
-.cards2{
-    flex: 1;
-    border: 2px solid rgb(29, 26, 26);
-}
-.cards h2{
-    font-size: 1rem;
-    font-family: fantasy;
-    color: rgb(65, 56, 56);
-}
-.cards p{
-    font-size: 0.999rem;
-    text-align: right;
-}
-.cards button{
-    border: 1px  wheat;
-    border-radius: 24px;
-    border-width: 12px;
-    float: right;
-    font-size: 1rem;
-    padding: 1em;
-    color: rgb(0, 0, 0);
-}
-.shop h2{
-    text-align: left;
-    color: beige;
-}
-.catagories{
+.btnh{
     display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 1em;
-   width: 100%;
-   background-color: rgba(255, 255, 255,0.3);
-   border: 1px solid white;
-  
-   
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+}
+.btnh button{
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px white;
+    border-radius: 16px;
+    box-shadow: 4px 4px 6px #b8c7dd,-4px -4px 6px #f8f0f0;
+    padding: 8px;
+    background:#E0E4E7;
+
+}
+.btnh button:hover{
+    box-shadow: -4px -4px 8px #c5c5c5,4px 4px 8px #fff;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+}
+.btnh button:active{
+    transform: scale(0.95);
 }
